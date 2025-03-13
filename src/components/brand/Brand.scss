@@ -1,0 +1,41 @@
+
+h2 {
+  margin-top: 150px;
+  margin-bottom: 60px;
+  color: rgb(24, 24, 24);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.brand-carts {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 90px;
+
+  .brand-cart {
+    //display: flex;
+    background: rgb(243, 243, 243);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    //box-shadow: ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+      color: #399A3A;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: fill;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+  }
+}

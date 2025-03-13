@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Header = () => {
+const ModelPage = () => {
     return (
         <div>
-            timur
+            <main></main>
         </div>
     );
 };
 
-export default Header;
+export default ModelPage;

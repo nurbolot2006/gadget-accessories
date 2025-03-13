@@ -1,0 +1,135 @@
+.menu-section {
+  background: rgb(246, 247, 251);
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  //border: 1px solid red;
+  height: 36px;
+  font-size: 14px;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    //border: 1px solid red;
+    gap: 40px;
+
+    p {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    p:hover {
+      color: rgb(41, 129, 42);
+    }
+  }
+
+  div {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    .phone {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      gap: 8px;
+
+      button {
+        background: none;
+      }
+    }
+
+    select {
+      background: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  //gap: 65px;
+  align-items: center;
+  padding-top: 15px;
+
+  .img-logo {
+    width: 99px;
+    height: 96px;
+  }
+
+  .search-input {
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 557px;
+      height: 40px;
+      box-sizing: border-box;
+      border: 2px solid rgb(57, 154, 58);
+      border-radius: 4px;
+      background: rgb(255, 255, 255);
+      color: rgb(104, 104, 104);
+      padding-left: 20px;
+      margin-left: 65px;
+      font-size: 16px;
+    }
+
+    .search-btn {
+      width: 116px;
+      height: 40px;
+      border-radius: 0 4px 4px 0;
+      margin-left: -4px;
+      margin-right: 65px;
+      background: rgb(57, 154, 58);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .search-btn:hover {
+      background: rgb(41, 129, 42);
+    }
+  }
+
+  .favorite-basket {
+    display: flex;
+    gap: 30px;
+
+    div {
+      width: 90px;
+      height: 62px;
+      padding-top: 7px;
+      text-align: center;
+      cursor: pointer;
+      //border: 1px solid red;
+      transition: 0.3s;
+
+      .icon {
+        width: 30px;
+        height: 26px;
+        //padding-bottom: 11px;
+      }
+
+      h3 {
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    div:hover {
+      color: rgb(57, 154, 58);
+    }
+  }
+}
+
+
