@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import {brandApi} from "../../redux/api/brand/BrandApi.js";
+import {phoneApi} from "../../redux/api/phones/PhoneApi.js";
 import "../../cardStyle/Cards.scss"
 
-const Model = () => {
+const Phones = () => {
         const [data, setData] = useState([]);
 
         useEffect(() => {
-            brandApi.getModelApi().then(b => {
-                console.log(b)
-                setData(b);
+            phoneApi.getPhone().then(p => {
+                console.log(p)
+                setData(p);
             })
         }, [])
 
@@ -17,7 +17,7 @@ const Model = () => {
                 <div className="container">
                     <h2>Загрузка...</h2>
                     <div className="cards">
-                        {[...Array(5)].map((_, index) => (
+                        {[...Array(6)].map((_, index) => (
                             <div className="loading-card" key={index}>
                                 <div className="loading-img"></div>
                                 <div className="loading-text"></div>
@@ -27,13 +27,14 @@ const Model = () => {
                 </div>
             );
         }
+
         return (
             <div className="container">
-                <h2>Выберите бренд</h2>
+                <h2>Выберите модель</h2>
                 <div className={"cards"}>
-                    {data.map(b => <div className={"card"} key={b.id}>
-                        <img src={b.brand_img} alt=""/>
-                        <p>{b.brand_name}</p>
+                    {data.map(p => <div className={"card"} key={p.id}>
+                        <img src={p.image} alt=""/>
+                        <p>{p.name}</p>
                     </div>)}
                 </div>
             </div>
@@ -41,4 +42,4 @@ const Model = () => {
     }
 ;
 
-export default Model;
+export default Phones;

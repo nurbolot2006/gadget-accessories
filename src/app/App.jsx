@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from "../components/layout/Layout.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from "../pages/home/HomePage.jsx";
-import ModelPage from "../pages/model/ModelPage.jsx";
+import PhonePage from "../pages/phone/PhonePage.jsx";
 
 const App = () => {
     return (
@@ -11,7 +11,7 @@ const App = () => {
                 <Routes>
                     <Route path={"/"} element={ <Layout/>}>
                         <Route index element={ <HomePage/>} />
-                        <Route path="/model" element={<ModelPage/>} />
+                        <Route path="/model" element={<PhonePage/>} />
                     </Route>
                 </Routes>
             </BrowserRouter>
