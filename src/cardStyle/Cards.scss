@@ -11,14 +11,14 @@ h2 {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 62px;
   margin-bottom: 90px;
 }
 
 .card {
   width: 255px;
   height: 302px;
-  background: rgb(243, 243, 243);
+  background: rgb(246, 247, 251);
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -26,6 +26,7 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-5px);
@@ -36,47 +37,44 @@ h2 {
   img {
     width: 200px;
     height: 220px;
-    object-fit: fill;
     border-radius: 10px;
     margin-bottom: 20px;
   }
 }
 
-.loading {
+.cards1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+  flex-wrap: wrap;
+  gap: 61px;
 }
 
-.loading-card {
-  width: 250px;
-  height: 302px;
+.loading-card1 {
+  width: 255px;
+  //height: 202px;
   background: rgb(243, 243, 243);
   padding: 15px;
   border-radius: 10px;
-  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.loading-img {
+.loading-img1 {
   width: 200px;
   height: 200px;
   background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
   background-size: 200% 100%;
   animation: loadingShimmer 1.5s infinite linear;
   border-radius: 10px;
+  margin-bottom: 25px;
 }
 
-.loading-text {
+.loading-text1 {
   width: 80%;
-  height: 20px;
+  height: 24px;
   background: #ddd;
-  margin-top: 10px;
   border-radius: 5px;
   animation: loadingShimmer 1.5s infinite linear;
 }

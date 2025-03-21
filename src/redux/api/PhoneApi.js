@@ -1,13 +1,14 @@
-import {supabase} from "../../../supabase/index.js";
+import {supabase} from "../../supabase/index.js";
 
 
 class PhoneApi {
 
+    async getPhoneByCategory(id) {
 
-    async getPhone() {
-        let { data: phones, error } = await supabase
+        let {data: phones, error} = await supabase
             .from('phones')
             .select('*')
+            .eq('brand_id', id)
         console.log(phones)
         return phones;
     }

@@ -1,9 +1,9 @@
-import {supabase} from "../../../supabase/index.js";
+import {supabase} from "../../supabase/index.js";
 
 
 class BrandApi{
 
-    async getModelApi() {
+    async getBrand() {
         let { data: brand, error } = await supabase
             .from('brand')
             .select('*')
