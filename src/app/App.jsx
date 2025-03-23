@@ -10,6 +10,7 @@ import CompanyPages from "../pages/company/CompanyPages.jsx";
 import GuaranteesPages from "../pages/Guarantees/GuaranteesPages.jsx";
 import ContactsPages from "../pages/contacts/ContactsPages.jsx";
 import DeliveryPages from "../pages/delivery/DeliveryPages.jsx";
+// import FavoritesPages from "../pages/favorites/FavoritesPages.jsx";
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                         <Route path="/Delivery" element={<DeliveryPages/>} />
                         <Route path="/Guarantees" element={<GuaranteesPages/>} />
                         <Route path="/Contacts" element={<ContactsPages/>} />
+                        {/*<Route path="/favorites" element={<FavoritesPages/>} />*/}
                     </Route>
                 </Routes>
             </BrowserRouter>

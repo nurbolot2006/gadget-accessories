@@ -34,6 +34,20 @@
 
   .footer__logo img {
     max-width: 150px;
+    cursor: pointer;
+  }
+
+  .footer__nav {
+    div {
+      p {
+        margin-bottom: 5px;
+        cursor: pointer;
+
+        &:hover {
+          color: #29812A
+        }
+      }
+    }
   }
 
   .footer__contacts ul {
@@ -46,11 +60,17 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 
     img {
       width: 20px;
       height: 20px;
     }
+  }
+
+  .footer__contact-item:hover {
+    color: #29812A;
   }
 
   .footer__payments {
@@ -92,15 +112,18 @@
     p {
       font-size: 14px;
       margin-bottom: 8px;
-      opacity: 0.8;
+
+      a {
+        color: #666666;
+      }
     }
   }
 }
 
 
-@media (max-width: 850px) {
-  .footer__container {
-  }
-}
+
+
+
+
 
 
