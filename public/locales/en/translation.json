@@ -1,0 +1,44 @@
+{
+  "home": "Home",
+  "about": "About Us",
+  "delivery": "Delivery and Payment",
+  "guarantees": "Guarantees",
+  "contacts": "Contacts",
+  "searchPlaceholder": "Enter search query...",
+  "searchButton": "Search",
+  "favorites": "Favorites",
+  "cart": "My Cart",
+  "account": "Personal account",
+
+  "loading": "Loading...",
+  "chooseBrand": "Choose a brand",
+
+  "wholesalePrices": "Fair wholesale prices",
+  "warrantyOneYear": "We provide a warranty from 1 year",
+  "directFromManufacturers": "We work directly with manufacturers",
+  "qualityControl": "Product quality control",
+  "quickReplacement": "Quick replacement in case of defects",
+
+  "navigation": "Navigation",
+  "paymentMethods": "Payment Methods",
+  "siteDevelopment": "SITE DEVELOPMENT",
+  "privacyPolicy": "Privacy Policy",
+
+  "chooseModel": "Choose a model",
+
+  "chooseCategory": "Choose a category",
+
+  "price": "Price",
+  "totalPrice": "Total price",
+  "addToCart": "Add to cart",
+  "addedToBasket": "added to cart!",
+
+  "yourBasket": "Your Basket",
+  "emptyCart": "Cart is empty",
+  "total": "Total",
+  "totalAmount": "Total Amount",
+  "clearAll": "Clear all",
+  "placeOrder": "Place order"
+
+
+}

@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Header.scss";
 import Logo from "../../../assets/logo.svg";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -9,9 +10,16 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 
 const Header = ({ onBasketClick }) => {
-    const basketCount = useSelector(state => state.basket.items.length);
-    // const favoritesCount = useSelector(state => state.favorite.favorites.length); // Избранноедагы продуктулардын саны
+    const { t, i18n } = useTranslation();
+    const basketCount = useSelector((state) => state.basket?.items?.length || 0);
+    const favoritesCount = useSelector((state) => state.favorite?.favorites?.length || 0);
     const navigate = useNavigate();
+
+    // Тилди өзгөртүү функциясы
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        localStorage.setItem("i18nextLng", lng);
+    };
 
     return (
         <header>
@@ -19,22 +27,23 @@ const Header = ({ onBasketClick }) => {
                 <div className="container">
                     <div className="row">
                         <div className="menu">
-                            <p onClick={() => navigate("/")}>Главная страница</p>
-                            <p onClick={() => navigate('/AboutTheCompany')}>О компании</p>
-                            <p onClick={() => navigate('/Delivery')}>Доставка и оплата</p>
-                            <p onClick={() => navigate('/Guarantees')}>Гарантии</p>
-                            <p onClick={() => navigate('/Contacts')}>Контакты</p>
+                            <p onClick={() => navigate("/")}>{t("home")}</p>
+                            <p onClick={() => navigate('/AboutTheCompany')}>{t("about")}</p>
+                            <p onClick={() => navigate('/Delivery')}>{t("delivery")}</p>
+                            <p onClick={() => navigate('/Guarantees')}>{t("guarantees")}</p>
+                            <p onClick={() => navigate('/Contacts')}>{t("contacts")}</p>
                         </div>
                         <div className="contact">
                             <div className="phone">
                                 <button><FaPhoneAlt /></button>
                                 <h5>+7 (965) 237-44-49</h5>
                             </div>
-                            <select>
+                            <select onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
+                                <option value="kg">Кыргызча</option>
                                 <option value="ru">Русский</option>
                                 <option value="en">English</option>
                             </select>
-                            <p>Личный кабинет</p>
+                            <p>{t("account")}</p>
                         </div>
                     </div>
                 </div>
@@ -46,21 +55,19 @@ const Header = ({ onBasketClick }) => {
                         <img className="img-logo" src={Logo} alt="Логотип" />
                     </div>
                     <div className="search-input">
-                        <input type="text" placeholder="Введите поисковой запрос..." />
-                        <button className="search-btn"><IoSearch /> Найти</button>
+                        <input type="text" placeholder={t("searchPlaceholder")} />
+                        <button className="search-btn"><IoSearch /> {t("searchButton")}</button>
                     </div>
                     <div className="favorite-basket">
-                        <div
-                            // onClick={() => navigate("/favorites")} style={{ cursor: "pointer", position: "relative" }}
-                        >
+                        <div onClick={() => navigate("/favorites")} style={{ cursor: "pointer" }}>
                             <MdFavoriteBorder className="icon" />
-                            {/*{favoritesCount > 0 && <span className="basket-count">{favoritesCount}</span>}*/}
-                            <p>Избранное</p>
+                            <p>{t("favorites")}</p>
+                            {favoritesCount > 0 && <span className="basket-count">{favoritesCount}</span>}
                         </div>
                         <div onClick={onBasketClick} style={{ cursor: "pointer", position: "relative" }}>
                             <PiShoppingCart className="icon" />
                             {basketCount > 0 && <span className="basket-count">{basketCount}</span>}
-                            <p>Моя корзина</p>
+                            <p>{t("cart")}</p>
                         </div>
                     </div>
                 </div>

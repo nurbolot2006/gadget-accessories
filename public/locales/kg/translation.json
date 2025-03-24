@@ -1,0 +1,42 @@
+{
+    "home": "Башкы бет",
+    "about": "Компания жөнүндө",
+    "delivery": "Жеткирүү жана төлөм",
+    "guarantees": "Кепилдиктер",
+    "contacts": "Байланыш",
+    "account": "Жеке кабинет",
+    "searchPlaceholder": "Издөө үчүн текст жазыңыз...",
+    "searchButton": "Издөө",
+    "favorites": "Тандалгандар",
+    "cart": "Менин себетим",
+
+    "loading": "Жүктөлүүдө...",
+    "chooseBrand": "Брендди тандаңыз",
+
+    "wholesalePrices": "Адилеттүү дүң баалар",
+    "warrantyOneYear": "1 жылдык кепилдик беребиз",
+    "directFromManufacturers": "Түздөн-түз өндүрүүчүлөр менен иштейбиз",
+    "qualityControl": "Продукциянын сапатын көзөмөлдөө",
+    "quickReplacement": "Кемчилик болгондо тез алмаштыруу",
+
+    "navigation": "Навигация",
+    "paymentMethods": "Төлөм ыкмалары",
+    "siteDevelopment": "САЙТТЫН ӨНҮКТҮРҮЛҮШҮ",
+    "privacyPolicy": "Купуялык саясаты",
+
+    "chooseModel": "Моделди тандаңыз",
+
+    "chooseCategory": "Категорияны тандаңыз",
+
+    "price": "Баасы",
+  "totalPrice": "Жалпы сумма",
+  "addToCart": "Себетке кошуу",
+  "addedToBasket": "себетке кошулду!",
+
+  "yourBasket": "Сиздин себетиңиз",
+  "emptyCart": "Себет бош",
+  "total": "Жалпы",
+  "totalAmount": "Жалпы сумма",
+  "clearAll": "Бардыгын тазалоо",
+  "placeOrder": "Буйрутма берүү"
+}

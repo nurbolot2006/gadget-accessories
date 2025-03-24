@@ -1,0 +1,42 @@
+{
+  "home": "Главная страница",
+  "about": "О компании",
+  "delivery": "Доставка и оплата",
+  "guarantees": "Гарантии",
+  "contacts": "Контакты",
+  "searchPlaceholder": "Введите поисковой запрос...",
+  "searchButton": "Найти",
+  "favorites": "Избранное",
+  "cart": "Моя корзина",
+  "account": "Личный кабинет",
+
+  "loading": "Загрузка...",
+  "chooseBrand": "Выберите бренд",
+
+  "wholesalePrices": "Достойные оптовые цены",
+  "warrantyOneYear": "Даём гарантию от 1 года",
+  "directFromManufacturers": "Работаем напрямую с производителями",
+  "qualityControl": "Контроль качества продукции",
+  "quickReplacement": "Быстрая замена при браке",
+
+  "navigation": "Навигация",
+  "paymentMethods": "Способы оплаты",
+  "siteDevelopment": "РАЗРАБОТКА САЙТА",
+  "privacyPolicy": "Политика конфиденциальности",
+
+  "chooseModel": "Выберите модель",
+
+  "chooseCategory": "Выберите категорию",
+
+  "price": "Цена",
+  "totalPrice": "Общая сумма",
+  "addToCart": "В корзину",
+  "addedToBasket": "добавлен в корзину!",
+
+  "yourBasket": "Ваша корзина",
+  "emptyCart": "Корзина пустая",
+  "total": "Сумма",
+  "totalAmount": "Общая сумма",
+  "clearAll": "Очистить всё",
+  "placeOrder": "Оформить заказ"
+}

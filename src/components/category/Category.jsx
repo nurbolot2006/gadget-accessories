@@ -1,11 +1,13 @@
-import React, {useEffect, useState} from 'react';
-import {categoryApi} from "../../redux/api/CategoryApi.js";
-import  '../../cardStyle/Cards.scss'
-import {useNavigate} from "react-router";
+import React, { useEffect, useState } from "react";
+import { categoryApi } from "../../redux/api/CategoryApi.js";
+import "../../cardStyle/Cards.scss";
+import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const Category = () => {
     const [data, setData] = useState([]);
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     useEffect(() => {
         categoryApi.getCategory().then(c => {
@@ -17,7 +19,7 @@ const Category = () => {
     if (data.length === 0) {
         return (
             <div className="container">
-                <h2>Загрузка...</h2>
+                <h2>{t("loading")}</h2>
                 <div className="cards1">
                     {[...Array(8)].map((_, index) => (
                         <div className="loading-card1" key={index}>
@@ -32,14 +34,14 @@ const Category = () => {
 
     return (
         <div className="container">
-            <h2>Выберите модель</h2>
+            <h2>{t("chooseCategory")}</h2>
             <div className="cards">
                 {data.map(c => (
                     <div className="card" key={c.id}>
                         <div onClick={() => {
                             navigate('/listProducts/' + c.id, { state: { categoryId: c.id } });
                         }}>
-                            <img src={c.category_img} alt=""/>
+                            <img src={c.category_img} alt={c.category_text} />
                             <p>{c.category_text}</p>
                         </div>
                     </div>
