@@ -1,5 +1,5 @@
 .menu-section {
-  background: rgb(246, 247, 251);
+  background: rgb(242, 244, 251);
 }
 
 
@@ -45,19 +45,20 @@
     select {
       background: none;
       cursor: pointer;
+      margin-right: 15px;
     }
   }
 }
 
 .search {
   display: flex;
-  //gap: 65px;
   align-items: center;
   padding-top: 15px;
 
   .img-logo {
     width: 99px;
     height: 96px;
+    margin-right: px;
   }
 
   .search-input {
@@ -106,6 +107,7 @@
     div {
       padding-top: 7px;
       text-align: center;
+      width: 120px;
       //border: 1px solid red;
       transition: 0.3s;
       cursor: pointer;
@@ -127,7 +129,7 @@
     .basket-count {
       position: absolute;
       top: 0;
-      right: 22px;
+      right: 35px;
       background: red;
       color: white;
       font-size: 12px;

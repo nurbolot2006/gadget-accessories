@@ -1,7 +1,7 @@
 import React from 'react';
 import BlockAdvantages from "../../components/blockAdvantages/BlockAdvantages.jsx";
 import Model from "../../components/brand/Brand.jsx";
-import ListProducts from "../../components/listProducts/ListProducts.jsx";
+import Block from "../../components/block/Block.jsx";
 
 const HomePage = () => {
     return (
@@ -9,6 +9,7 @@ const HomePage = () => {
             <main>
                 <Model/>
                 <BlockAdvantages/>
+                <Block/>
             </main>
         </div>
     );

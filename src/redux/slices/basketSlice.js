@@ -1,39 +1,33 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     items: []
 };
 
 const basketSlice = createSlice({
-    name: "basket",
-    initialState,
-    reducers: {
+    name: "basket", initialState, reducers: {
         addToBasket: (state, action) => {
             const existingItem = state.items.find(item => item.id === action.payload.id);
             if (existingItem) {
                 existingItem.quantity += action.payload.quantity; // Колдонуучу тандаган санды кошуу
             } else {
-                state.items.push({ ...action.payload });
+                state.items.push({...action.payload});
             }
-        },
-        removeFromBasket: (state, action) => {
+        }, removeFromBasket: (state, action) => {
             state.items = state.items.filter(item => item.id !== action.payload);
-        },
-        increaseQuantity: (state, action) => {
+        }, increaseQuantity: (state, action) => {
             const item = state.items.find(item => item.id === action.payload);
             if (item) item.quantity += 1;
-        },
-        decreaseQuantity: (state, action) => {
+        }, decreaseQuantity: (state, action) => {
             const item = state.items.find(item => item.id === action.payload);
             if (item && item.quantity > 1) {
                 item.quantity -= 1;
             }
-        },
-        clearBasket: (state) => {
+        }, clearBasket: (state) => {
             state.items = [];
         }
     }
 });
 
-export const { addToBasket, removeFromBasket, increaseQuantity, decreaseQuantity, clearBasket } = basketSlice.actions;
+export const {addToBasket, removeFromBasket, increaseQuantity, decreaseQuantity, clearBasket} = basketSlice.actions;
 export default basketSlice.reducer;

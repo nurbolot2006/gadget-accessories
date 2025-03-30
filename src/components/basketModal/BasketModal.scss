@@ -165,6 +165,8 @@
     color: gray;
     display: flex;
     align-items: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
 
     span {
       color: #399A3A;
@@ -177,11 +179,12 @@
   .clear-btn {
     background: rgb(248, 86, 86);;
     cursor: pointer;
-    padding: 6px 12px;
+    padding: 10px 20px;
     border-radius: 8px;
     font-size: 16px;
     color: white;
     transition: 0.3s ease;
+    margin-left: 30px;
   }
 
   .clear-btn:hover {
@@ -191,10 +194,11 @@
   .order-btn {
     background: rgb(57, 154, 58);
     cursor: pointer;
-    padding: 6px 12px;
+    padding: 10px 20px;
     border-radius: 8px;
     color: white;
     font-size: 16px;
+    margin-left: 30px;
   }
   .order-btn:hover {
     background: rgb(41, 129, 42);

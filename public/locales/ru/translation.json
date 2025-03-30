@@ -38,5 +38,12 @@
   "total": "Сумма",
   "totalAmount": "Общая сумма",
   "clearAll": "Очистить всё",
-  "placeOrder": "Оформить заказ"
+  "placeOrder": "Оформить заказ",
+
+  "compatibility": "Совместимость",
+  "addedToCart": "добавлен в корзину!",
+
+  "orderPlaced": "Заказ #{{orderNumber}} оформлен!",
+  "managerWillContact": "Скоро с Вами свяжется наш менеджер.",
+  "ok": "ОК"
 }

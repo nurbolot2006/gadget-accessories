@@ -29,14 +29,21 @@
     "chooseCategory": "Категорияны тандаңыз",
 
     "price": "Баасы",
-  "totalPrice": "Жалпы сумма",
-  "addToCart": "Себетке кошуу",
-  "addedToBasket": "себетке кошулду!",
+    "totalPrice": "Жалпы сумма",
+    "addToCart": "Себетке кошуу",
+    "addedToBasket": "себетке кошулду!",
 
-  "yourBasket": "Сиздин себетиңиз",
-  "emptyCart": "Себет бош",
-  "total": "Жалпы",
-  "totalAmount": "Жалпы сумма",
-  "clearAll": "Бардыгын тазалоо",
-  "placeOrder": "Буйрутма берүү"
+    "yourBasket": "Сиздин себетиңиз",
+    "emptyCart": "Себет бош",
+    "total": "Жалпы",
+    "totalAmount": "Жалпы сумма",
+    "clearAll": "Бардыгын тазалоо",
+    "placeOrder": "Буйрутма берүү",
+
+    "compatibility": "Шайкештик",
+    "addedToCart": "себетке кошулду!",
+
+    "orderPlaced": "Заказ #{{orderNumber}} кабыл алынды!",
+    "managerWillContact": "Жакында менеджерибиз сиз менен байланышат.",
+    "ok": "ОК"
 }

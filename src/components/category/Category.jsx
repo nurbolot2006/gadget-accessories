@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { categoryApi } from "../../redux/api/CategoryApi.js";
+import React, {useEffect, useState} from "react";
+import {categoryApi} from "../../redux/api/CategoryApi.js";
 import "../../cardStyle/Cards.scss";
-import { useNavigate } from "react-router";
-import { useTranslation } from "react-i18next";
+import {useNavigate} from "react-router";
+import {useTranslation} from "react-i18next";
 
 const Category = () => {
     const [data, setData] = useState([]);
     const navigate = useNavigate();
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     useEffect(() => {
         categoryApi.getCategory().then(c => {
@@ -39,9 +39,9 @@ const Category = () => {
                 {data.map(c => (
                     <div className="card" key={c.id}>
                         <div onClick={() => {
-                            navigate('/listProducts/' + c.id, { state: { categoryId: c.id } });
+                            navigate('/listProducts/' + c.id, {state: {categoryId: c.id}});
                         }}>
-                            <img src={c.category_img} alt={c.category_text} />
+                            <img src={c.category_img} alt={c.category_text}/>
                             <p>{c.category_text}</p>
                         </div>
                     </div>

@@ -1,13 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     lang: localStorage.getItem("lang") || "ru"
 };
 
 const languageSlice = createSlice({
-    name: "language",
-    initialState,
-    reducers: {
+    name: "language", initialState, reducers: {
         setLanguage: (state, action) => {
             state.lang = action.payload;
             localStorage.setItem("lang", action.payload); // 🌍 Тилди сактоо
@@ -15,5 +13,5 @@ const languageSlice = createSlice({
     }
 });
 
-export const { setLanguage } = languageSlice.actions;
+export const {setLanguage} = languageSlice.actions;
 export default languageSlice.reducer;

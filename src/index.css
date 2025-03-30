@@ -1,24 +1,23 @@
-
 @import url("https://cdn.example.com/fonts/muller.css");
 
 body {
-  font-family: "Muller", sans-serif;
+    font-family: "Muller", sans-serif;
 }
 
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
 }
 
 
 .container {
-  width: 1210px;
-  margin: 0 auto;
-  /*border: 1px solid red;*/
+    width: 1210px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
 }
 

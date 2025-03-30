@@ -38,7 +38,12 @@
   "total": "Total",
   "totalAmount": "Total Amount",
   "clearAll": "Clear all",
-  "placeOrder": "Place order"
+  "placeOrder": "Place order",
 
+  "compatibility": "Compatibility",
+  "addedToCart": "added to the cart!",
 
+  "orderPlaced": "Order #{{orderNumber}} has been placed!",
+  "managerWillContact": "Our manager will contact you soon.",
+  "ok": "OK"
 }
